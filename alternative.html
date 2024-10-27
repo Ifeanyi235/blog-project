@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/styles/style1.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header id="header" class="wht-bg">
+        <div id="sdbr-icn" class="flex" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-ratio" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-ratio" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
+                <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0M2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </div>
+        <div class="flex">
+            <img alt="blog-logo" id="logo" src="./public/images/blog-logo.png">
+        </div>
+        <div class="flex">
+            <p>Products<select class="orange-color" name="products"></select></p>
+            <p>Solutions<select class="orange-color" name="Solutions"></select></p>
+            <p>Resourses<select class="orange-color" name="Resourses"></select></p>
+            <p>Pricing<select class="orange-color" name="Pricing"></select></p>
+        </div>
+        <div class="flex">
+            <button id="login" class="fit-height wht-bg" type="submit">Log In</button>
+            <button id="trial" class="fit-height orange-background"type="submit">Start Free Trial</button>
+        </div>
+        <div id="dpd-dot" class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-ratio" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-ratio" width="16" height="16" fill="currentColor" class="bi bi-list-nested" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5"/>
+                </svg>
+        </div>
+    </header>
+
+    <div id="hddn-sdbr">
+        <div id="h-sidebar">
+            <a class="flex bold"><svg class="orange-color" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+                <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+              </svg>Resource</a>
+            <a class="flex orange-color">Blog</a>
+            <a>Academy</a>
+            <a class="flex bold"><svg class="orange-color"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+              </svg>Categories</a>
+            <a class="orange-color">All</a>
+            <a>Expert hot Seat</a>
+            <a>Facilitation</a>
+            <a>Webninar</a>
+            <a>Retrium Updates</a>
+            <a>Collaroration and Communication</a>
+            <a>Retrospective Quick Tips</a>
+            <a>Agile Practices 101</a> 
+        </div>
+    </div>
+
+    <div class="orange-background margin cr-bd-l cr-bd-r round-shadow" id="search">
+        <input id="search-bar" class="cr-bd-l pd-l" placeholder="Search">
+        <button type="submit" id="srch-btn" class="orange-background cr-bd-r pd-l pd-r">Search</button>
+    </div>
+
+    <div id="homepage" class="margin">
+        <div id="sidebar">
+            <a class="flex bold"><svg class="orange-color" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+                <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+              </svg>Resource</a>
+            <a class="flex orange-color">Blog</a>
+            <a>Academy</a>
+            <a class="flex bold"><svg class="orange-color"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"/>
+              </svg>Categories</a>
+            <a class="orange-color">All</a>
+            <a>Expert hot Seat</a>
+            <a>Facilitation</a>
+            <a>Webninar</a>
+            <a>Retrium Updates</a>
+            <a>Collaroration and Communication</a>
+            <a>Retrospective Quick Tips</a>
+            <a>Agile Practices 101</a> 
+        </div>
+        <div id="article-home">
+            <div class="round-shadow wht-bg">
+                <div >
+                   <img class="img-at-rz" alt="article1" src="./public/images/download.jfif">
+                    <p>Article 1</p> 
+                </div>
+                <button id="read-more" class="fit-height orange-background"type="submit">Start Free Trial</button>
+            </div>
+            <div class="round-shadow wht-bg">
+                <p>Article 2</p>
+            </div>
+            <div class="round-shadow wht-bg">
+                <p>Article 3</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script> 
+    <script src="./public/js/index1.js" charset="utf-8"></script>
+</body>
+</html>

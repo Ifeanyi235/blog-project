@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: bisque;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.heading {
+    font-size: 4rem;
+    font-family: "Cedarville Cursive", cursive;
+    color: black;
+    text-shadow: 2px 2px 1px gainsboro;
+    text-align: center;
+}
+
+.articles {
+    width: 80%;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+button {
+    font-size: 1rem;
+    color: black;
+    background-color: ivory;
+    border: 2px;
+    border-color: ivory;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gainsboro;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+#title {
+    font-size: 2.5rem;
+    color: black;
+    text-shadow: 2px 2px 1px gainsboro;
+    text-align: center;
+    margin: 2rem;
+}
+
+#blog-article {
+    padding: 0 4rem;
+    text-align: justify;
+}
+
+.full-width {
+    width: 100%;
+}

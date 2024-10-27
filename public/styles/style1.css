@@ -1,0 +1,282 @@
+* {
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+header {
+    box-shadow: 0 4px 6px -2px rgb(226, 225, 225);
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0rem 2rem;
+    position: fixed;
+    z-index: 9999;
+    width: calc(100% - 4rem);
+}
+
+#logo {
+    height: 2.5rem;
+    width: auto;
+    margin: 0.5rem 0rem;
+}
+
+#trial {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999rem;
+}
+
+#hddn-sdbr {
+    background-color: aqua;
+    position: fixed;
+    padding: 32px 24px;
+
+    top: 3.7rem;
+    width: 249px;
+    height: 410px;
+    z-index: 9999;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+}
+
+#h-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 249px;
+    height: 410px;
+    padding-left: 32px;
+    gap: 16px;
+}
+
+#sdbr-icn {
+    display: none;
+}
+
+#dpd-dot {
+    display: none;
+}
+
+#search{
+    margin-top: 5.5rem;
+    width: fit-content;
+}
+
+#search-bar {
+    height: 2rem;
+    width: 20rem;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}
+
+#srch-btn {
+    height: 2rem;
+}
+
+#homepage {
+    align-items: start;
+    display: inline-flex;
+    gap: 20px;
+    padding: 0rem 3rem;
+    justify-content:space-between;
+}
+
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 20%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    gap: 1rem;
+}
+
+#article-home {
+    height: 20rem;
+    width: 60%;
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(30px, 0%);
+}
+
+#article-home::-webkit-scrollbar {
+    display: none;
+}
+
+#article-home>div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 18.5rem;
+    border-radius: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#read-more {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999rem;
+    
+}
+
+.round-shadow {
+    box-shadow: 0px 0px 4px 2px rgb(226, 225, 225);
+}
+
+.fit-height {
+    height: fit-content;
+}
+
+.margin {
+    margin: 1rem 0rem;
+}
+.orange-background {
+    background-color: orange;
+    width: fit-content;
+    align-self: center;
+}
+
+.orange-color {
+    color: orange;
+}
+
+.orange-background:hover {
+    background-color: rgb(248, 163, 7);
+}
+
+.wht-bg {
+    background-color: white;
+}
+
+.cr-bd-l {
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+}
+
+.cr-bd-r {
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+}
+
+.pd-l {
+    padding-left: 1.5rem;
+}
+
+.pd-r {
+    padding-right: 1.5rem;
+}
+
+.img-at-rz {
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.flex {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.svg-ratio {
+    height: 1.5rem;
+    width: auto;
+}
+
+@media (max-width: 990px) {
+    #sidebar {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 970px) {
+    #dpd-dot {
+        display: inline-flex;
+    }
+
+    #sdbr-icn {
+        display: inline-flex;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #article-home {
+        padding: 1rem 5rem;
+        width: calc(100% - 10rem);
+    }
+
+}
+
+@media (max-width: 768px) {
+    #article-home {
+        padding: 1rem 2rem;
+        grid-template: auto / 1fr 1fr;
+        width: calc(100% - 4rem);
+    }
+
+    #search {
+        display: inline-flex;
+        width: 60%;
+        background-color: white;
+        justify-content: center;
+    }
+
+    #search-bar {
+        width: 80%;
+    }
+
+    #srch-btn {
+        width: 20%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+}
+ 
+@media (max-width: 460px) {
+    #article-home {
+        padding: 1rem 2rem;
+        grid-template: auto / 1fr;
+        width: calc(80% - 4rem);
+    }
+
+    #search {
+        width: 75%;
+    }
+
+    #srch-btn {
+        width: 25%;
+    }
+}
+
+@media (max-width: 400px) {
+    #logo {
+        height: 1.5rem;
+    }
+}
