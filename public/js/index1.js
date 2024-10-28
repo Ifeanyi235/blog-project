@@ -6,6 +6,7 @@ let search = document.querySelector("#search");
 let sidebar = document.querySelector("#sidebar");
 let sideIconClose = $("#sdbr-icn svg").eq(0);
 let sideIconOpen = $("#sdbr-icn svg").eq(1);
+let sideIconContainer = $("#sdbr-icn");
 
 
 
@@ -22,26 +23,52 @@ $("#delete").on("click", async function (event) {
 });
 
 // To change the nav icons
-$("#dpd-dot svg").eq(0).on("mouseenter", function () {
+$("#dpd-dot").on("mouseenter", function () {
     $("#dpd-dot svg").eq(0).hide();
     $("#dpd-dot svg").eq(1).show();
+    $("#hddn-nav").css("display", "inline-flex");
 });
 
-$("#dpd-dot svg").eq(1).on("mouseleave", function () {
+$("#dpd-dot").on("mouseleave", function () {
     $("#dpd-dot svg").eq(1).hide();
     $("#dpd-dot svg").eq(0).show();
+    $("#hddn-nav").on("mouseenter", function () {
+        $("#dpd-dot svg").eq(1).show();
+        $("#dpd-dot svg").eq(0).hide();
+        $("#hddn-nav").css("display", "inline-flex");
+    });
+    $("#hddn-nav").on("mouseleave", function () {
+        $("#hddn-nav").hide();
+        $("#dpd-dot svg").eq(1).hide();
+        $("#dpd-dot svg").eq(0).show();
+    })
+    $("#hddn-nav").hide();
+    
 });
 
 // To change the side bar icons
 sideIconOpen.hide();
-sideIconClose.on("mouseenter", function () {
+sideIconContainer.on("mouseenter", function () {
     sideIconClose.hide();
     sideIconOpen.show();
-})
+    $("#hddn-sdbr").show();
+});
 
-sideIconOpen.on("mouseleave", function () {
+sideIconContainer.on("mouseleave", function () {
     sideIconOpen.hide();
     sideIconClose.show();
+    $("#hddn-sdbr").on("mouseenter", function () {
+        $("#hddn-sdbr").show();
+        sideIconOpen.show();
+        sideIconClose.hide();
+    });
+    $("#hddn-sdbr").on("mouseleave", function (){
+        $("#hddn-sdbr").hide();
+        sideIconOpen.hide();
+        sideIconClose.show();
+    })
+    $("#hddn-sdbr").hide();
+
 })
 
 function checkVisibility (element) {

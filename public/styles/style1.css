@@ -35,17 +35,42 @@ header {
     border-radius: 9999rem;
 }
 
-#hddn-sdbr {
-    background-color: aqua;
-    position: fixed;
-    padding: 32px 24px;
+#login {
+    margin-right: 1rem;
+}
 
-    top: 3.7rem;
-    width: 249px;
-    height: 410px;
+#hddn-tabs {
+    height: fit-content;
+}
+
+#hddn-nav {
+    top: 3.6rem;
+    left: calc(100% - 230px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 8px 24px;
+    width: 180px;
+    height: 420px;
     z-index: 9999;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
+}
+
+
+#hddn-sdbr {
+    display: none;
+    position: fixed;
+    padding: 32px 24px;
+    top: 2.6rem;
+    width: 249px;
+    height: 420px;
+    z-index: 9999;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    margin-top: 1rem;
 }
 
 #h-sidebar {
@@ -206,6 +231,9 @@ header {
     height: 1.5rem;
     width: auto;
 }
+#hddn-sdbr:hover {
+    display: inline-flex;
+}
 
 @media (max-width: 990px) {
     #sidebar {
@@ -278,5 +306,13 @@ header {
 @media (max-width: 400px) {
     #logo {
         height: 1.5rem;
+    }
+
+    #hddn-sdbr {
+        top: 2.5rem;
+    }
+
+    #hddn-nav {
+        top: 2.6rem;
     }
 }
